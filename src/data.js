@@ -1,31 +1,32 @@
 export const projects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Project 1",
+    subtitle: "Tech Used",    
+    // use tech icons here too?
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./placeholder.png",
     link: "",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "Project 2",
+    subtitle: "Tech Used",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./placeholder.png",
     link: "",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Project 3",
+    subtitle: "Tech Used",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./placeholder.png",
     link: "",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "Project 4",
+    subtitle: "Tech Used",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./placeholder.png",
