@@ -15,17 +15,11 @@ export default function Projects() {
 
   const containerStyle = {
     width: "50%", // Adjust the width as needed (e.g., "50%" for half the size)
-    padding: "1rem", // Adjust padding as needed
-  };
-
-  const imageStyle = {
-    border: "3px solid #34D399", // Thin green border
-    height: "100%", // Ensure consistent image dimensions
   };
 
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font" style={containerStyle}>
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40" style={containerStyle}>
         <div className="flex flex-col w-full mb-20">
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
             Apps I've Built
@@ -43,7 +37,10 @@ export default function Projects() {
                     alt="gallery"
                     className="absolute inset-0 w-full h-full object-cover object-center"
                     src={project.image}
-                    style={imageStyle}
+                    style={{
+                      height: "100%",
+                      border: "2px solid #34D399", // Thin green border
+                    }}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 flex flex-col justify-between h-full">
                     <div>
@@ -55,6 +52,8 @@ export default function Projects() {
                           flexBasis: "100%",
                           display: "flex",
                           justifyContent: "space-between",
+                          border: "1px solid #34D399", // Thin green border
+                          padding: "0.25rem",
                         }}
                       ></h2>
                       <h1 className="title-font text-lg font-medium text-white mb-3">
