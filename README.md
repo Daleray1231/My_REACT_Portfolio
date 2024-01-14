@@ -47,3 +47,6 @@ As with the previous portfolio Challenge, remember that "good" design is subject
 - Choose a color palette so that your site doesn't just look like the default Bootstrap theme or an unstyled HTML site. Look into resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
 - Make sure the font size is large enough to read and that the colors don't cause eye strain.
 - Consider using animations and React component libraries. Note that this will not affect your grade, but it may impact how potential employers gauge your knowledge.
+
+<!-- Sources:
+<a target="_blank" href="https://icons8.com/icon/12963/previous">Previous</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
