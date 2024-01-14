@@ -52,7 +52,6 @@ export default function Projects() {
                           flexBasis: "100%",
                           display: "flex",
                           justifyContent: "space-between",
-                          border: "1px solid #34D399", // Thin green border
                           padding: "0.25rem",
                         }}
                       ></h2>
