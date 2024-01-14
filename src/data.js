@@ -87,10 +87,16 @@ export const testimonials = [
 ];
 
 export const skills = [
+  "HTML5",
+  "CSS3",
+  "CSS Frameworks (Bootstrap, Bulma, Tailwind)",
   "JavaScript",
   "React",
   "Next.js",
+  "Express.js",
   "Node",
+  "MongoDB",
+  "MySQL",
   "GraphQL",
   "Material UI",
 ];
