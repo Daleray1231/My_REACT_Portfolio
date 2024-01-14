@@ -14,27 +14,27 @@ export default function Contact() {
     }
     function handleSubmit(e) {
         e.preventDefault();
-    
+
         const formData = new URLSearchParams();
         formData.append("form-name", "contact");
         formData.append("name", name);
         formData.append("email", email);
         formData.append("message", message);
-    
+
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: formData.toString(),
         })
-        .then(() => {
-            alert("Message sent!");
-            setName("");
-            setEmail("");
-            setMessage("");
-        })
-        .catch((error) => alert(error));
+            .then(() => {
+                alert("Message sent!");
+                setName("");
+                setEmail("");
+                setMessage("");
+            })
+            .catch((error) => alert(error));
     }
-    
+
 
     return (
         <section id="contact" className="relative">
@@ -75,9 +75,10 @@ export default function Contact() {
                     name="contact"
                     method="POST"
                     data-netlify="true"
-                    onSubmit={handleSubmit}  // Use the onSubmit prop
+                    onSubmit={handleSubmit}
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
                 >
+                    <input type="hidden" name="form-name" value="contact" /> {/* Hidden input for form name */}
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Let's work together!
                     </h2>
@@ -91,7 +92,7 @@ export default function Contact() {
                         <input
                             type="text"
                             id="name"
-                            name="name"
+                            name="name"  // Make sure the name attribute is set
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                         />
                     </div>
