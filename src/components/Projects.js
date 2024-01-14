@@ -8,7 +8,7 @@ import prevButtonImage from "../slider_images/last_slide.png";
 
 export default function Projects() {
   const containerStyle = {
-    width: "50%",
+    width: "65%",
     position: "relative",
   };
 
