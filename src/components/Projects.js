@@ -56,6 +56,9 @@ export default function Projects() {
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+      <p style={{ textAlign: "center", fontSize: "18px", width: "40%", margin: "auto" }}>
+        Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.
+      </p>
       <div className="container px-5 py-10 mx-auto text-center lg:px-40" style={containerStyle}>
         <Slider {...sliderSettings}>
           {projects.map((project) => (
