@@ -14,20 +14,34 @@ export const projects = [
     repoLink: "https://github.com/Daleray1231/TapMap",
   },
   {
-    title: "Project 2",
-    subtitle: "Tech Used",
+    title: "Social Network API",
+    subtitle:
+      '<img src="./express.png" alt="Express Icon" />' +
+      '<img src="./Node.png" alt="Node Icon" />' +
+      '<img src="./mongodb.png" alt="Mongo Icon" />' +
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+      '<img src="./API.png" alt="API Icon" />',
     description:
-      "Brief Description of Project",
-    image: "./placeholder.png",
-    link: "",
+      "Click HERE to be directed to a video demonstration. This project is a functional backend API for a Social Networking platform.",
+    image: "Social_API.png",
+    link: "https://share.vidyard.com/watch/exNjifKfpf6zu58AA4zRrm?",
+    repoLink: "https://github.com/Daleray1231/Social_NetworkAPI",
   },
   {
-    title: "Project 3",
-    subtitle: "Tech Used",
+    title: "Tech_Blog",
+    subtitle:
+      '<img src="./HTML5.png" alt="HTML Icon" />' +
+      '<img src="./CSS3.png" alt="CSS Icon" />' +
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+      '<img src="./API.png" alt="API Icon" />' +
+      '<img src="./express.png" alt="Express Icon" />' +
+      '<img src="./Node.png" alt="Node Icon" />' +
+      '<img src="./mysql.png" alt="Mysql Icon" />',
     description:
-      "Brief Description of Project",
-    image: "./placeholder.png",
-    link: "",
+      "This is a simple web application built using Express.js, Sequelize ORM, and Handlebars.js for templating. The application provides features for user authentication, blog creation, editing, and commenting.",
+    image: "./Tech_Blog1.png",
+    link: "https://blooming-taiga-54403-4daac811aa65.herokuapp.com/",
+    repoLink: "https://github.com/Daleray1231/Tech_Blog",
   },
   {
     title: "Project 4",
