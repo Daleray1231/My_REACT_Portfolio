@@ -32,6 +32,22 @@ export const projects = [
     image: "./placeholder.png",
     link: "",
   },
+  {
+    title: "Project 5",
+    subtitle: "Tech Used",
+    description:
+      "Brief Description of Project",
+    image: "./placeholder.png",
+    link: "",
+  },
+  {
+    title: "Project 6",
+    subtitle: "Tech Used",
+    description:
+      "Brief Description of Project",
+    image: "./placeholder.png",
+    link: "",
+  },
 ];
 
 export const testimonials = [
