@@ -1,12 +1,17 @@
 export const projects = [
   {
-    title: "Project 1",
-    subtitle: "Tech Used",
-    // use tech icons here too?
+    title: "TapMap",
+    subtitle:
+      '<img src="./HTML5.png" alt="HTML Icon" />' +
+      '<img src="./CSS3.png" alt="CSS Icon" />' +
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+      '<img src="./API.png" alt="API Icon" />' +
+      '<img src="./Bulma_CSS.png" alt="Bulma Icon" />',
     description:
-      "Brief Description of Project",
-    image: "./placeholder.png",
-    link: "",
+      "This project was created for the User to discover Breweries in a given city.",
+    image: "./TapMap.png",
+    link: "https://daleray1231.github.io/TapMap/",
+    repoLink: "https://github.com/Daleray1231/TapMap",
   },
   {
     title: "Project 2",
