@@ -110,8 +110,9 @@ export default function Projects() {
         </Slider>
       </div>
       <p style={{ textAlign: "center", fontSize: "16px", width: "60%", margin: "-50px auto 20px", border: "1px solid #34D399", padding: "10px", borderRadius: "5px" }}>
-  Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.
-</p>
+        Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.<br/>
+        Click on the slide to be directed to the deployed application.
+      </p>
     </section>
   );
 }
