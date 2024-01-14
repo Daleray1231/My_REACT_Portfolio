@@ -15,10 +15,16 @@ export default function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
     
+        const formData = new URLSearchParams();
+        formData.append("form-name", "contact");
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("message", message);
+    
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }),
+            body: formData.toString(),
         })
         .then(() => {
             alert("Message sent!");
@@ -28,6 +34,7 @@ export default function Contact() {
         })
         .catch((error) => alert(error));
     }
+    
 
     return (
         <section id="contact" className="relative">
