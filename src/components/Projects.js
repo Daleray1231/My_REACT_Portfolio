@@ -3,34 +3,63 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { projects } from "../data";
+import nextButtonImage from "../slider_images/next_slide.png";
+import prevButtonImage from "../slider_images/last_slide.png";
 
 export default function Projects() {
+  const containerStyle = {
+    width: "50%",
+    position: "relative",
+  };
+
+  const CustomNextArrow = ({ onClick }) => (
+    <img
+      src={nextButtonImage}
+      alt="Next"
+      className="slick-arrow custom-arrow custom-next-arrow"
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "35%",
+        right: "-20px", // Adjust this value to add spacing on the right
+        transform: "translateY(-50%)",
+        zIndex: "1",
+      }}
+    />
+  );
+
+  const CustomPrevArrow = ({ onClick }) => (
+    <img
+      src={prevButtonImage}
+      alt="Prev"
+      className="slick-arrow custom-arrow custom-prev-arrow"
+      onClick={onClick}
+      style={{
+        position: "absolute",
+        top: "35%",
+        left: "-20px", // Adjust this value to add spacing on the left
+        transform: "translateY(-50%)",
+        zIndex: "1",
+      }}
+    />
+  );
+
   const sliderSettings = {
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
-
-  const containerStyle = {
-    width: "50%", // Adjust the width as needed (e.g., "50%" for half the size)
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
   };
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40" style={containerStyle}>
-        <div className="flex flex-col w-full mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Apps I've Built
-          </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Hover to display Project Title, Tech used, Why this app?
-          </p>
-        </div>
         <Slider {...sliderSettings}>
           {projects.map((project) => (
-            <div key={project.image}>
+            <div key={project.image} className="relative">
               <a href={project.link} className="sm:w-1/2 w-100 p-4 h-full">
                 <div className="flex relative h-full">
                   <img
@@ -39,7 +68,7 @@ export default function Projects() {
                     src={project.image}
                     style={{
                       height: "100%",
-                      border: "2px solid #34D399", // Thin green border
+                      border: "2px solid #34D399",
                     }}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 flex flex-col justify-between h-full">
