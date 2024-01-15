@@ -1,83 +1,68 @@
-# React Portfolio App README
+# Developer Portfolio Website
 
-## Overview
+Welcome to my web developer portfolio built with React, showcasing my skills, projects, testimonials, and providing a means for visitors to contact me. This portfolio is designed to present a professional overview of my work, making it easy for potential employers or collaborators to learn more about me.
 
-The React Portfolio App is designed to showcase a developer's skills and work samples through a single-page application. It aims to provide an interactive and visually appealing portfolio for potential employers to assess the candidate's suitability for open positions.
+## Features
 
-## User Story
+- **Navbar Navigation:**
+  - Navigate seamlessly through different sections of the portfolio.
+  - Links include: About Me, Projects, Testimonials, Contact, and a Downloadable Resume.
 
-As an employer looking for candidates with experience in building single-page applications, I want to view a potential employee's deployed React portfolio of work samples. This will allow me to assess whether they are a good fit for an open position.
+- **About Me:**
+  - Learn more about my background, skills, and expertise as a web developer.
 
-## Acceptance Criteria
+- **Projects:**
+  - View a curated selection of my projects, each with a detailed description and a link to the deployed application.
+  - Hover over project slides to see project details, and click for deployment.
 
-The React Portfolio App fulfills the following criteria:
+- **Testimonials:**
+  - Read testimonials from satisfied clients or collaborators.
 
-### Header, Content, and Footer:
+- **Contact Form:**
+  - Easily get in touch with me using the provided contact form.
+  - Form submission sends messages to my email.
 
-- The portfolio consists of a header, a section for content, and a footer.
+- **Downloadable Resume:**
+  - Access and download my resume for a detailed overview of my qualifications.
 
-### Navigation:
+## Project Structure
 
-- The header includes navigation titles for About Me, Portfolio, Contact, and Resume.
-- Navigation titles dynamically highlight the current section.
-- Users can navigate between sections without page reloading.
+- **`src` Folder:**
+  - Contains the source code for the React application.
+  - Organized into components, including `About`, `Projects`, `Testimonials`, `Contact`, `Navbar`, `Skills`, and more.
 
-### Default Section:
+- **Component Files:**
+  - Each component file (`About.js`, `Projects.js`, `Testimonials.js`, `Contact.js`, etc.) handles specific sections of the portfolio.
 
-- When loading the portfolio for the first time, the About Me section and title are selected by default.
+- **Styling:**
+  - Styled using Tailwind CSS for a modern and responsive design.
 
-### About Me Section:
+## Usage
 
-- Displays a recent photo or avatar of the developer.
-- Includes a short bio about the developer.
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies: `npm install`
+3. Run the application: `npm start`
 
-### Portfolio Section:
+## Contributing
 
-- Showcases titled images of six applications.
-- Provides links to both the deployed applications and corresponding GitHub repositories.
-
-### Contact Section:
-
-- Features a contact form with fields for name, email address, and a message.
-- Notifies users if a required field is left empty.
-- Notifies users if an invalid email address is entered.
-
-### Resume Section:
-
-- Includes a link to a downloadable resume.
-- Lists the developer's proficiencies.
-
-### Footer:
-
-- Presents text or icon links to the developer’s GitHub and LinkedIn profiles.
-- Includes a link to the developer's profile on a third platform (Stack Overflow, Twitter).
-
-## Getting Started
-
-To get started with the React Portfolio App:
-
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Start the development server with `npm start`.
-4. Customize the content, add project details, and tailor the portfolio to your preferences.
-
-## Projects
-
-For each project featured in the portfolio:
-
-- Include an image of the deployed application (GIF or screenshot).
-- Provide the title of the project.
-- Insert a link to the deployed application.
-- Include a link to the corresponding GitHub repository.
-
-## Design Guidelines
-
-Follow these design guidelines for a polished appearance:
-
-- Implement a mobile-first design.
-- Choose a distinctive color palette using resources like [Coolors](https://coolors.co/).
-- Ensure font size is large enough for readability without causing eye strain.
-- Consider incorporating animations and React component libraries for an enhanced user experience.
-
-## Sources:
 Tech icon images provided by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+Feel free to contribute to this project by opening issues or pull requests. Your contributions are welcome and appreciated.
+
+### Usage
+
+1. Clone the repository: `git clone <repository-url>`
+2. Install dependencies: `npm install`
+3. Run the build command: `npm run build`
+4. Run the application: `npm start`
+
+## Contact Information
+
+For any inquiries, collaborations, or just to say hi, you can reach out to me at:
+
+- [Github Profile](https://github.com/Daleray1231)
+- [LinkedIn Profile](https://www.linkedin.com/in/dale-haynie-3b66142a7/)
+- [Portfolio Website](https://famous-halva-c5c152.netlify.app/)
+- Email: daleray1231@gmail.com
+
+Thank you for visiting my portfolio! 🚀
