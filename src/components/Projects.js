@@ -21,7 +21,7 @@ export default function Projects() {
       style={{
         position: "absolute",
         top: "35%",
-        right: "-20px", // Adjust this value to add spacing on the right
+        right: "-50px", // Adjust this value to add spacing on the right
         transform: "translateY(-50%)",
         zIndex: "1",
       }}
@@ -37,7 +37,7 @@ export default function Projects() {
       style={{
         position: "absolute",
         top: "35%",
-        left: "-20px", // Adjust this value to add spacing on the left
+        left: "-50px", // Adjust this value to add spacing on the left
         transform: "translateY(-50%)",
         zIndex: "1",
       }}

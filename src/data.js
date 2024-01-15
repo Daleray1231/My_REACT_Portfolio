@@ -57,20 +57,30 @@ export const projects = [
     repoLink: "https://github.com/Daleray1231/WorkDay_Scheduler",
   },
   {
-    title: "Project 5",
-    subtitle: "Tech Used",
-    description:
-      "Brief Description of Project",
-    image: "./placeholder.png",
-    link: "",
+    title: "Weather Dashboard",
+    subtitle: 
+    '<img src="./HTML5.png" alt="HTML Icon" />' +
+    '<img src="./CSS3.png" alt="CSS Icon" />' +
+    '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+    '<img src="./jquery.png" alt="jQuery Icon" />',
+  description:
+      "The Weather Dashboard is a web application that allows users to check the weather forecast for a specific city. It provides current weather information and a 5-day forecast.",
+    image: "./Weather_Dashboard.png",
+    link: "https://daleray1231.github.io/Weather_Dashboard/",
+    repoLink: "https://github.com/Daleray1231/Weather_Dashboard",
   },
   {
-    title: "Project 6",
-    subtitle: "Tech Used",
+    title: "Code Quiz!",
+    subtitle: 
+    '<img src="./HTML5.png" alt="HTML Icon" />' +
+    '<img src="./CSS3.png" alt="CSS Icon" />' +
+    '<img src="./JavaScript.png" alt="JavaScript Icon" />',
     description:
-      "Brief Description of Project",
-    image: "./placeholder.png",
-    link: "",
+      "This Code Quiz is designed to test your knowledge of coding!  " + 
+      "  Complete with timer and high score board!",
+    image: "./code_quiz.png",
+    link: "https://daleray1231.github.io/Code_Quiz/",
+    repoLink: "https://github.com/Daleray1231/Code_Quiz",
   },
 ];
 
