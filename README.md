@@ -62,7 +62,7 @@ For any inquiries, collaborations, or just to say hi, you can reach out to me at
 
 - [Github Profile](https://github.com/Daleray1231)
 - [LinkedIn Profile](https://www.linkedin.com/in/dale-haynie-3b66142a7/)
-- [Portfolio Website](https://famous-halva-c5c152.netlify.app/)
+- [Portfolio Website](https://daleray.netlify.app/)
 - Email: daleray1231@gmail.com
 
 Thank you for visiting my portfolio! 🚀
