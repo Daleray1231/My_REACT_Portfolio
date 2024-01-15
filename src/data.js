@@ -30,8 +30,6 @@ export const projects = [
   {
     title: "Tech_Blog",
     subtitle:
-      '<img src="./HTML5.png" alt="HTML Icon" />' +
-      '<img src="./CSS3.png" alt="CSS Icon" />' +
       '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
       '<img src="./API.png" alt="API Icon" />' +
       '<img src="./express.png" alt="Express Icon" />' +
@@ -44,12 +42,19 @@ export const projects = [
     repoLink: "https://github.com/Daleray1231/Tech_Blog",
   },
   {
-    title: "Project 4",
-    subtitle: "Tech Used",
+    title: "Work Day Scheduler",
+    subtitle:
+      '<img src="./HTML5.png" alt="HTML Icon" />' +
+      '<img src="./CSS3.png" alt="CSS Icon" />' +
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+      '<img src="./API.png" alt="API Icon" />' +
+      '<img src="./bootstrap.png" alt="Bootstrap Icon" />',
+
     description:
-      "Brief Description of Project",
-    image: "./placeholder.png",
-    link: "",
+      "The Work Day Scheduler is a simple calendar app that helps you schedule your workday effectively. It provides a user-friendly interface to organize your tasks and appointments for the day.",
+    image: "./WorkdayScheduler.png",
+    link: "https://daleray1231.github.io/WorkDay_Scheduler/",
+    repoLink: "https://github.com/Daleray1231/WorkDay_Scheduler",
   },
   {
     title: "Project 5",
