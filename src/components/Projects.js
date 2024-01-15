@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { projects } from "../data";
 import nextButtonImage from "../slider_images/next_slide.png";
 import prevButtonImage from "../slider_images/last_slide.png";
+import "../../src/Projects.css"; // Import the CSS file
 
 export default function Projects() {
   const containerStyle = {
@@ -67,11 +68,13 @@ export default function Projects() {
                     className="absolute inset-0 w-full h-full object-cover object-center"
                     src={project.image}
                     style={{
+                      width: "100%",
                       height: "100%",
+                      objectFit: "cover", // Add this property
                       border: "2px solid #34D399",
                     }}
                   />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100 flex flex-col justify-between h-full">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90 flex flex-col justify-between h-full">
                     <div>
                       <h2
                         className="tracking-widest text-sm title-font font-medium text-green-400 mb-1 flex flex-wrap"
@@ -110,7 +113,7 @@ export default function Projects() {
         </Slider>
       </div>
       <p style={{ textAlign: "center", fontSize: "16px", width: "60%", margin: "-50px auto 20px", border: "1px solid #34D399", padding: "10px", borderRadius: "5px" }}>
-        Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.<br/>
+        Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.<br />
         Click on the slide to be directed to the deployed application.
       </p>
     </section>
