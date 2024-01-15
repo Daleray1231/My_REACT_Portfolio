@@ -58,12 +58,12 @@ export const projects = [
   },
   {
     title: "Weather Dashboard",
-    subtitle: 
-    '<img src="./HTML5.png" alt="HTML Icon" />' +
-    '<img src="./CSS3.png" alt="CSS Icon" />' +
-    '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
-    '<img src="./jquery.png" alt="jQuery Icon" />',
-  description:
+    subtitle:
+      '<img src="./HTML5.png" alt="HTML Icon" />' +
+      '<img src="./CSS3.png" alt="CSS Icon" />' +
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+      '<img src="./jquery.png" alt="jQuery Icon" />',
+    description:
       "The Weather Dashboard is a web application that allows users to check the weather forecast for a specific city. It provides current weather information and a 5-day forecast.",
     image: "./Weather_Dashboard.png",
     link: "https://daleray1231.github.io/Weather_Dashboard/",
@@ -71,12 +71,12 @@ export const projects = [
   },
   {
     title: "Code Quiz!",
-    subtitle: 
-    '<img src="./HTML5.png" alt="HTML Icon" />' +
-    '<img src="./CSS3.png" alt="CSS Icon" />' +
-    '<img src="./JavaScript.png" alt="JavaScript Icon" />',
+    subtitle:
+      '<img src="./HTML5.png" alt="HTML Icon" />' +
+      '<img src="./CSS3.png" alt="CSS Icon" />' +
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />',
     description:
-      "This Code Quiz is designed to test your knowledge of coding!  " + 
+      "This Code Quiz is designed to test your knowledge of coding!  " +
       "  Complete with timer and high score board!",
     image: "./code_quiz.png",
     link: "https://daleray1231.github.io/Code_Quiz/",
@@ -87,17 +87,17 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Professional Referral",
-    image: "./placeholder.png",
-    name: "Name",
-    company: "Comany",
+      "Highly reccomended! The work was done well and in a timely manner.",
+    image: "https://randomuser.me/api/portraits/men/7.jpg",
+    name: "Chris P Bacon",
+    company: "ReallyReel_SE",
   },
   {
     quote:
-      "Professional Referral",
-    image: "./placeholder.png",
-    name: "Name",
-    company: "Comany",
+      "It was a pleasure to work with Dale! He was thorough in understanding my vision, and delivered the product in a timely fashion.",
+    image: "https://randomuser.me/api/portraits/women/33.jpg",
+    name: "Ella Vader",
+    company: "Notaphony.app",
   },
 ];
 
