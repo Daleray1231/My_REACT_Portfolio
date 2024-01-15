@@ -21,6 +21,10 @@
   }
 
   /* Resize and make images rectangular on mobile */
+  .slick-slide {
+    width: 100%; /* Ensure the slide takes up 100% of the container width */
+  }
+
   .slick-slide img {
     width: 100%;
     height: auto;
