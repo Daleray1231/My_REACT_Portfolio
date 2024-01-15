@@ -1,40 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Contact() {
-    const [name, setName] = React.useState("");
-    const [email, setEmail] = React.useState("");
-    const [message, setMessage] = React.useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-    function encode(data) {
-        return Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-            )
-            .join("&");
-    }
-    function handleSubmit(e) {
-        e.preventDefault();
+  useEffect(() => {
+    // Clear the input fields after a short delay when name, email, and message are empty.
+    const clearFields = setTimeout(() => {
+      setName("");
+      setEmail("");
+      setMessage("");
+    }, 500);
 
-        const formData = new URLSearchParams();
-        formData.append("form-name", "contact");
-        formData.append("name", name);
-        formData.append("email", email);
-        formData.append("message", message);
+    return () => clearTimeout(clearFields);
+  }, [name, email, message]);
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: formData.toString(),
-        })
-            .then(() => {
-                alert("Message sent!");
-                setName("");
-                setEmail("");
-                setMessage("");
-            })
-            .catch((error) => alert(error));
-    }
+  function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+  
+    const formData = new FormData();
+    formData.append("form-name", "contact");
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+  
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        alert("Message sent!");
+        // Clear the input fields directly
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
+      .catch((error) => alert(error));
+  }
+  
 
     return (
         <section id="contact" className="relative">
