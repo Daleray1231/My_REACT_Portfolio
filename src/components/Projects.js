@@ -71,7 +71,7 @@ export default function Projects() {
                       width: "100%",
                       height: "100%",
                       objectFit: "cover", // Add this property
-                      border: "2px solid #34D399",
+                      border: "3px solid #312e81",
                     }}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90 flex flex-col justify-between h-full">
@@ -112,7 +112,7 @@ export default function Projects() {
           ))}
         </Slider>
       </div>
-      <p style={{ textAlign: "center", fontSize: "16px", width: "60%", margin: "-50px auto 20px", border: "1px solid #34D399", padding: "10px", borderRadius: "5px" }}>
+      <p style={{ textAlign: "center", fontSize: "16px", width: "60%", margin: "-50px auto 20px", border: "1px solid #6366f1", padding: "10px", borderRadius: "5px" }}>
         Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.<br />
         Click on the slide to be directed to the deployed application.
       </p>

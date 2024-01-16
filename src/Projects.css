@@ -13,11 +13,13 @@
   .custom-next-arrow {
     right: 5px;
     transform: translateY(-50%);
+    background-color: #33cd96;
   }
 
   .custom-prev-arrow {
     left: 5px;
     transform: translateY(-50%);
+    background-color: #33cd96;
   }
 
   /* Resize and make images rectangular on mobile */
