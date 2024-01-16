@@ -44,7 +44,7 @@ Welcome to my web developer portfolio built with React, showcasing my skills, pr
 3. Run the application: `npm start`
 
 ## Contributing
-
+Development began with an online React tutorial on [Freecodecamp](https://www.freecodecamp.org/news/build-portfolio-website-react/)  
 Tech icon images provided by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 Feel free to contribute to this project by opening issues or pull requests. Your contributions are welcome and appreciated.
