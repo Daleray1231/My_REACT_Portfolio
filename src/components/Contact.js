@@ -42,16 +42,17 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.05937670555!2d-95.7316371924237!3d29.817362976617712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1705425855778!5m2!1sen!2sus"
                     />
-                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md" style={{ width: '100%', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                         <div className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 ADDRESS
                             </h2>
                             <p className="mt-1">
-                                97 Warren St. <br />
-                                New York, NY 10007
+                                <br />
+                                Houston, Texas
                             </p>
                         </div>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -59,12 +60,12 @@ export default function Contact() {
                                 EMAIL
                             </h2>
                             <a className="text-indigo-400 leading-relaxed">
-                                reedbarger@email.com
+                                daleray1231@gmail.com
                             </a>
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                 PHONE
                             </h2>
-                            <p className="leading-relaxed">123-456-7890</p>
+                            <p className="leading-relaxed">(832) 995-9720</p>
                         </div>
                     </div>
                 </div>
