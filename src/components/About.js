@@ -42,6 +42,7 @@ export default function About() {
             className="object-cover object-center rounded"
             alt="hero"
             src="./funny_finn.jpg"
+            style={{ borderRadius: '35%' }}
           />
         </div>
       </div>
