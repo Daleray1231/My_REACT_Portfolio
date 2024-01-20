@@ -70,8 +70,9 @@ export default function Projects() {
                     style={{
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover", // Add this property
+                      objectFit: "fill",
                       border: "3px solid #312e81",
+                      padding: "10px",
                     }}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90 flex flex-col justify-between h-full">
