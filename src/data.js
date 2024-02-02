@@ -10,8 +10,8 @@ export const projects = [
     description:
       "This app is a website for a fictional 80’s synth band called Syntax.",
     image: "./homepage.png",
-    link: "https://daleray1231.github.io/TapMap/",
-    repoLink: "https://syntax-8rz6.onrender.com",
+    link: "https://syntax-8rz6.onrender.com",
+    repoLink: "https://github.com/grayd500/Syntax",
   },
   {
     title: "TapMap",
