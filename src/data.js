@@ -1,5 +1,19 @@
 export const projects = [
   {
+    title: "Syntax (Band Website)",
+    subtitle:
+      '<img src="./JavaScript.png" alt="JavaScript Icon" />' +
+      '<img src="./API.png" alt="API Icon" />' +
+      '<img src="./express.png" alt="Express Icon" />' +
+      '<img src="./Node.png" alt="Node Icon" />' +
+      '<img src="./mongodb.png" alt="Mongo Icon" />',
+    description:
+      "This app is a website for a fictional 80’s synth band called Syntax.",
+    image: "./homepage.png",
+    link: "https://daleray1231.github.io/TapMap/",
+    repoLink: "https://syntax-8rz6.onrender.com",
+  },
+  {
     title: "TapMap",
     subtitle:
       '<img src="./HTML5.png" alt="HTML Icon" />' +
