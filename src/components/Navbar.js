@@ -22,8 +22,8 @@ export default function Navbar() {
           </a> */}
           {/* Adjusted resume link */}
           <a
-            href="/Dale_Haynie_resume.pdf"
-            download="Dale_Haynie_resume.pdf"
+            href="/DaleHaynie_Resume.pdf"
+            download="DaleHaynie_Resume.pdf"
             className="mr-5 hover:text-white flex items-center"
           >
             Resume
