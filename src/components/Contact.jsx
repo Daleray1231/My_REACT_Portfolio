@@ -37,18 +37,18 @@ export default function Contact() {
             <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                     <iframe
-                        width="100%"
-                        height="100%"
+                        width="95%"
+                        height="95%"
                         title="map"
                         className="absolute inset-0"
                         frameBorder={0}
                         marginHeight={0}
                         marginWidth={0}
-                        style={{ filter: "opacity(0.7)" }}
+                        style={{ filter: "opacity(.9)" }}
 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.05937670555!2d-95.7316371924237!3d29.817362976617712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1705425855778!5m2!1sen!2sus"
                     />
-                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md text-white" style={{ width: '85%', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
+                    <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md text-white" style={{ width: '65%', backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
                         <div className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 ADDRESS

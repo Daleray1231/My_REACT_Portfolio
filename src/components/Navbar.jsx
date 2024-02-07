@@ -39,18 +39,18 @@ export default function Navbar() {
           <Link to="/skills" className="mr-5 hover:text-white text-white">
             Skills
           </Link>
-          <Link to="/testimonials" className="mr-5 hover:text-white text-white">
+          {/* <Link to="/testimonials" className="mr-5 hover:text-white text-white">
             Testimonials
-          </Link>
+          </Link> */}
           {/* Adjusted resume link */}
-          <Link
-            to="/Dale_Haynie_resume.pdf"
-            download="Dale_Haynie_resume.pdf"
+          <a
+            href="/DaleHaynie_resume.pdf"
+            download="DaleHaynie_resume.pdf"
             className="mr-5 hover:text-white text-white flex items-center"
           >
             Resume
             <DocumentDownloadIcon className="w-4 h-4 ml-1" />
-          </Link>
+          </a>
         </nav>
         <Link
           to="/contact"
