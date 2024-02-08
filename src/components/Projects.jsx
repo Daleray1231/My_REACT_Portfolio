@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -10,9 +10,12 @@ import "../../src/Projects.css";
 
 export default function Projects() {
   const containerStyle = {
-    width: "65%",
+    width: "56%",
+    height: "100%",
     position: "relative",
   };
+
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   const CustomNextArrow = ({ onClick }) => (
     <img
@@ -54,14 +57,22 @@ export default function Projects() {
     slidesToScroll: 1,
     nextArrow: <CustomNextArrow />,
     prevArrow: <CustomPrevArrow />,
+    beforeChange: (oldIndex, newIndex) => setCurrentSlideIndex(newIndex),
   };
 
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-      <div className="container px-5 py-10 mx-auto text-center lg:px-40" style={containerStyle}>
+      <div className="container px-5 py-5 mx-auto text-center lg:px-40 pb-0">
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12 border-b-2 border-indigo-500 pb-2">
           My Projects
         </h1>
+      </div>
+
+      <h2 className="project-title text-white text-center text-3xl font-medium mb-4">
+        {projects[currentSlideIndex].title}
+      </h2>
+
+      <div className="container px-5 mx-auto text-center lg:px-40" style={containerStyle}>
         <Slider {...sliderSettings}>
           {projects.map((project) => (
             <div key={project.image} className="relative">
@@ -72,16 +83,19 @@ export default function Projects() {
                     className="absolute inset-0 w-full h-full object-cover object-center"
                     src={project.image}
                     style={{
-                      width: "80%", // Adjust the width percentage as needed
+                      width: "100%",
                       height: "100%",
                       objectFit: "cover",
                       border: "3px solid #312e81",
                       padding: "10px",
-                      margin: "auto", // Center the image
+                      margin: "auto",
                     }}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90 flex flex-col justify-center items-center h-full" style={{ width: "100%" }}>
                     <div>
+                      <h2 className="text-lg font-medium text-white mb-3">
+                        {project.title}
+                      </h2>
                       <h2
                         className="tracking-widest text-sm title-font font-medium text-green-400 mb-1 flex flex-wrap"
                         dangerouslySetInnerHTML={{ __html: project.subtitle }}
@@ -93,13 +107,7 @@ export default function Projects() {
                           padding: "0.25rem",
                         }}
                       ></h2>
-                      <h1 className="title-font text-lg font-medium text-white mb-3">
-                        {project.title}
-                      </h1>
                     </div>
-                    <p className="leading-relaxed mb-4 absolute bottom-0 left-0 right-0 text-center">
-                      {project.description}
-                    </p>
                     {project.repoLink && (
                       <a
                         href={project.repoLink}
@@ -116,11 +124,18 @@ export default function Projects() {
             </div>
           ))}
         </Slider>
+        {projects.map((project, index) => (
+          <p key={project.image} className={`leading-relaxed mb-4 text-white text-center ${index === currentSlideIndex ? "" : "hidden"}`} style={{ textAlign: "center"}}>
+            {project.description}
+          </p>
+        ))}
       </div>
-      <p style={{ textAlign: "center", fontSize: "16px", width: "60%", margin: "20px auto", border: "1px solid #6366f1", padding: "10px", borderRadius: "5px" }}>
-        Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.<br />
-        Click on the slide to be directed to the deployed application.
-      </p>
+      <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+        <p style={{ textAlign: "center", fontSize: "16px", width: "75%", margin: "10px auto", border: "1px solid #6366f1", padding: "10px", borderRadius: "5px" }}>
+          Hover over the slide to view the Project Name, Technologies used, and a summary of the Projects function.
+          Click on the slide to be directed to the deployed application.
+        </p>
+      </div>
     </section>
   );
 }

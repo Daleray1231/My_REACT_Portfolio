@@ -14,7 +14,7 @@ export default function About() {
             <br className="hidden lg:inline-block" />
           </h1>
           <p className="mb-8 leading-relaxed text-white">
-            I am an Independent Freelance Web Application Developer. My expertise lies in Front End Web Design and Features, specializing in Online Marketing through Website Design/Development, Search Engine Optimization (SEO), and Social Media Campaigns.
+            I am an Independent Freelance Web Application Developer. My expertise lies in Front End Web Development and Features, specializing in Online Marketing through Website Design, Search Engine Optimization (SEO), and Social Media Campaigns.
           </p>
           <div className="flex justify-center">
             <Link

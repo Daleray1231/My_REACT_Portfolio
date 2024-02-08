@@ -11,6 +11,7 @@ export default function Navbar() {
   const handlePlayStopClick = () => {
     if (isPlaying) {
       audioElement.pause();
+      audioElement.currentTime = 0; // Reset audio to beginning
     } else {
       audioElement.play();
     }
@@ -44,8 +45,8 @@ export default function Navbar() {
           </Link> */}
           {/* Adjusted resume link */}
           <a
-            href="/DaleHaynie_resume.pdf"
-            download="DaleHaynie_resume.pdf"
+            href="/DaleHaynie_Resume.pdf"
+            download="/DaleHaynie_Resume.pdf"
             className="mr-5 hover:text-white text-white flex items-center"
           >
             Resume
@@ -56,7 +57,7 @@ export default function Navbar() {
           to="/contact"
           className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 text-white"
         >
-          Hire Me
+          Contact Me
           <ArrowRightIcon className="w-4 h-4 ml-1" />
         </Link>
       </div>

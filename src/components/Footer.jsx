@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-indigo-900 fixed bottom-0 w-full z-10">
+    <footer className="bg-indigo-900 py-0 fixed bottom-0 w-full z-0">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav className="md:mx-auto md:py-1 md:pl-4 md:border-gray-700 flex flex-wrap items-center text-base justify-center">
           <a href="https://github.com/Daleray1231" className="mr-5 hover:text-white">

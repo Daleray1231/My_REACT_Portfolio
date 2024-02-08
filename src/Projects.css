@@ -1,6 +1,11 @@
 :root {
   background-color: #111827;
 }
+
+#projects {
+  margin-bottom: 100px;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
   .container {
