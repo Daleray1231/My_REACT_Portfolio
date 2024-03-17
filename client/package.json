@@ -4,7 +4,7 @@
   "description": "Welcome to my web developer portfolio built with React, showcasing my skills, projects, testimonials, and providing a means for visitors to contact me. This portfolio is designed to present a professional overview of my work, making it easy for potential employers or collaborators to learn more about me.",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
