@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Projects from "./components/Projects.jsx";
-import Skills from "./components/Skills.jsx";
-// import Testimonials from "./components/Testimonials.jsx";
-import Footer from "./components/Footer.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+import Navbar from "./pages/Navbar.jsx";
+import Projects from "./pages/Projects.jsx";
+import Skills from "./pages/Skills.jsx";
+// import Testimonials from "./pages/Testimonials.jsx";
+import Footer from "./pages/Footer.jsx";
 
 export default function App() {
   return (

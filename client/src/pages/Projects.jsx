@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { projects } from "../data";
-import nextButtonImage from "../slider_images/next_slide.png";
-import prevButtonImage from "../slider_images/last_slide.png";
+import nextButtonImage from "../assets/next_slide.png";
+import prevButtonImage from "../assets/last_slide.png";
 import "../Projects.css";
 
 export default function Projects() {
